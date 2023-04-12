@@ -17,5 +17,9 @@ namespace app_Cs_firstStep
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

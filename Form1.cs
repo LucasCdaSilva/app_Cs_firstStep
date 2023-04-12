@@ -21,5 +21,39 @@ namespace app_Cs_firstStep
         {
 
         }
+
+        private void buttonClickHere_Click(object sender, EventArgs e)
+        {
+            if (buttonClickHere.Text != "Done!")
+            {
+                buttonClickHere.Text = "Done!";
+                labelResultClickHEre.Text = "Hello World!";
+            }
+            else
+            {
+                buttonClickHere.Text = "Undone!";
+                labelResultClickHEre.Text = "None";
+            }
+
+
+        }
+
+        private void labelResultClickHEre_Click(object sender, EventArgs e)
+        {
+            labelResultClickHEre.ForeColor = System.Drawing.SystemColors.ControlText;
+         
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            labelResultClickHEre.Text = textBox1.Text;
+        }
+
+        
     }
 }
